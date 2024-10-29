@@ -10,3 +10,7 @@ Slice: An array that can grow or shrink, every ele must be same type
 # 3-19. Custom Type Declarations
 
 Generating deck.go file and adding print() function
+
+# 3-20. Receiver Functions
+
+convention: usually refers one or two letter of Reveiver
