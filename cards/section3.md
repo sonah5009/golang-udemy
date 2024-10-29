@@ -24,3 +24,7 @@ convention: usually refers one or two letter of Reveiver
 fruits[0:2] : 0-1
 fruits[:2] : starts in the begining up to 2 not including 2
 fruits[2:] : starts 2 to the end
+
+# 3-23. Multiple Return Values
+
+type이 서로 다른 2개 값을 return 하는 예제 작성
