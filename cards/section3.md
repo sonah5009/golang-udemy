@@ -28,3 +28,23 @@ fruits[2:] : starts 2 to the end
 # 3-23. Multiple Return Values
 
 type이 서로 다른 2개 값을 return 하는 예제 작성
+
+# 3-quiz6
+
+    package main
+
+    import "fmt"
+
+    func main() {
+    c := color("Red")
+
+    fmt.Println(c.describe("is an awesome color"))
+    }
+
+    type color string
+
+    func (c color) describe(description string) (string) {
+    return string(c) + " " + description
+    }
+
+string(c) 때문에 error 난다고 착각함
