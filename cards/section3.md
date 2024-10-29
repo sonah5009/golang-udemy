@@ -14,3 +14,7 @@ Generating deck.go file and adding print() function
 # 3-20. Receiver Functions
 
 convention: usually refers one or two letter of Reveiver
+
+# 3-21. Creating a New Deck
+
+\_ underscore: index of for loop case when we don't need to use index function
