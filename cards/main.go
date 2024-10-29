@@ -7,7 +7,8 @@ func main() {
 	cards = append(cards, "Six of Spades")
 
 	for i, card := range cards {
-		fmt.Println(i, card)
+		fmt.Println(card)
+		// if we don't use 'i' inside => can see "declared and not used"
 	}
 }
 
