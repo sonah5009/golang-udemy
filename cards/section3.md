@@ -18,3 +18,9 @@ convention: usually refers one or two letter of Reveiver
 # 3-21. Creating a New Deck
 
 \_ underscore: index of for loop case when we don't need to use index function
+
+# 3-22. Slice Range Syntax
+
+fruits[0:2] : 0-1
+fruits[:2] : starts in the begining up to 2 not including 2
+fruits[2:] : starts 2 to the end
