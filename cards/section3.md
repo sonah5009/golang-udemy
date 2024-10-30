@@ -51,10 +51,11 @@ string(c) 때문에 error 난다고 착각함
 
 # 3-24. Byte Slices
 
-golang.org
-io -> ioutil: Package ioutil implements some I/O utility finctions
+<del>golang.org</del>  
+https://go.dev/  
+<del>io -> ioutil: Package ioutil implements some I/O utility finctions</del> decrepted
 
-`func WriteFile(filename string, data []byte, perm os.FileMode) error`
+`func WriteFile(filename string, data []byte, perm os.FileMode) error`  
 data []byte: pass argument of byte slice
 perm: permission
 
@@ -74,3 +75,10 @@ write the code
 What I guess:
 Although the type of `deck` is as []string, the need for `[]string(d)` is Go's strict type system enforcing explicit type conversion.
 Ofc `d` works but the explicit conversion `[]stirng(d)` is still commonly used.
+
+# 3-27. Saving Data to the Hard Drive
+
+<del>ioutil.WriteFile(filename, []byte(d.toString()), 0666)</del>
+
+    import os
+    os.WriteFile(filename, []byte(d.toString()), 0666)
