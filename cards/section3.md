@@ -54,7 +54,7 @@ string(c) 때문에 error 난다고 착각함
 golang.org
 io -> ioutil: Package ioutil implements some I/O utility finctions
 
-`func WriteFile(filename string, data []byte, perm os.FileMode) error
+`func WriteFile(filename string, data []byte, perm os.FileMode) error`
 data []byte: pass argument of byte slice
 perm: permission
 
@@ -63,3 +63,14 @@ asciitable.com
 # 3-25. Deck to String
 
 write the code
+
+# 3-26. Joining a Slice of Strings
+
+`func Join(a []string, sep string) string`
+
+`func (d deck) toString() string {
+	return strings.Join([]string(d), ",")
+}`
+What I guess:
+Although the type of `deck` is as []string, the need for `[]string(d)` is Go's strict type system enforcing explicit type conversion.
+Ofc `d` works but the explicit conversion `[]stirng(d)` is still commonly used.
