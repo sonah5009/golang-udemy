@@ -86,3 +86,7 @@ Ofc `d` works but the explicit conversion `[]stirng(d)` is still commonly used.
 # 3-28. Reading From the Hard Drive
 
 add: code in deck.go file
+
+# 3-29. Error Handling
+
+...

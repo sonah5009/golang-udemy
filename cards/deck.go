@@ -42,12 +42,16 @@ func (d deck) saveToFile(filename string) error {
 	return os.WriteFile(filename, []byte(d.toString()), 0666)
 }
 
-func newDeckFromFile(filename string) {
+func newDeckFromFile(filename string) deck {
 	bs, err := os.ReadFile(filename) //byteSlice
 	if err != nil {
 		// Option #1 - log the error and return a call to newDeck()
 		// Option #2 - log the error and entirely quit the program
 		fmt.Println("Error:", err)
 		os.Exit(1)
+		// Error: open randomFileName: no such file or directory
+		// exit status 1
 	}
+	s := strings.Split(string(bs), ",") // Ace of Spades,Two of Spades,Threee of Spades,...
+	return deck(s)
 }
