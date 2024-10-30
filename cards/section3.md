@@ -48,3 +48,14 @@ type이 서로 다른 2개 값을 return 하는 예제 작성
     }
 
 string(c) 때문에 error 난다고 착각함
+
+# 3-24. Byte Slices
+
+golang.org
+io -> ioutil: Package ioutil implements some I/O utility finctions
+
+`func WriteFile(filename string, data []byte, perm os.FileMode) error
+data []byte: pass argument of byte slice
+perm: permission
+
+asciitable.com
