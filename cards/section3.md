@@ -82,3 +82,7 @@ Ofc `d` works but the explicit conversion `[]stirng(d)` is still commonly used.
 
     import os
     os.WriteFile(filename, []byte(d.toString()), 0666)
+
+# 3-28. Reading From the Hard Drive
+
+add: code in deck.go file
