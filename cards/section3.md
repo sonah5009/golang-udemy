@@ -96,3 +96,10 @@ add: code in deck.go file
 `func (d deck) shuffle()`
 In the lecture, doesn't show randomization every single time.
 But now it's randomization every singe time.
+
+# 3-31. Random Number Generation
+
+`func NewSource(seed int64) Source`
+since Go1.20, Intn() and other functions automatically set the Seed, so the implementation of rand.newSource() and rand.New() mentioned in the current section 31 is unnecessary.
+
+https://tip.golang.org/doc/go1.20#math/rand
