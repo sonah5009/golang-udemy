@@ -90,3 +90,9 @@ add: code in deck.go file
 # 3-29. Error Handling
 
 ...
+
+# 3-30. Shuffling a Deck
+
+`func (d deck) shuffle()`
+In the lecture, doesn't show randomization every single time.
+But now it's randomization every singe time.
