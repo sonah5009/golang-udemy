@@ -133,3 +133,23 @@ if statement, check the first and last of cards
     FAIL
     exit status 1
     FAIL    cards   0.247s
+
+# 3-38. Project Review
+
+Q.Why do we not choose receiver?  
+A.Avoid ambiguous
+
+    func (d deck) deal(handSize int) (deck, deck) {
+        return d[:handSize], d[handSize:]
+    }
+
+=> `cards.deal(5)` makes us think that it slices 5 of cards and return new slices
+kinda modified list of `cards`
+
+Therefore
+
+    func deal(d deck, handSize int) (deck, deck) {
+    return d[:handSize], d[handSize:]
+    }
+
+not receiver, but argument
