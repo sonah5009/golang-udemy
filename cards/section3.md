@@ -111,3 +111,9 @@ https://tip.golang.org/doc/go1.20#math/rand
 # 3-33. Testing With Go
 
 Add: `deck_test.go`
+
+# 3-34. Errorf call has arguments but no formatting directives
+
+%v: whatever value
+
+# 3-35. Writing Useful Tests
