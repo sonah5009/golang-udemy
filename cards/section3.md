@@ -117,3 +117,7 @@ Add: `deck_test.go`
 %v: whatever value
 
 # 3-35. Writing Useful Tests
+
+# 3-36. Asserting Elements in a Slice
+
+if statement, check the first and last of cards
