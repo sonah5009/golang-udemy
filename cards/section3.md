@@ -121,3 +121,15 @@ Add: `deck_test.go`
 # 3-36. Asserting Elements in a Slice
 
 if statement, check the first and last of cards
+
+# 3-37. Testing File IO
+
+    (base) gg@ggs-MacBook-Pro cards % go test
+    PASS
+    ok      cards   0.112s
+    (base) gg@ggs-MacBook-Pro cards % go test
+    --- FAIL: TestSaveToDeckAndNewDeckFromFile (0.00s)
+        deck_test.go:35: Expected 16 cards in deck, got 16
+    FAIL
+    exit status 1
+    FAIL    cards   0.247s
