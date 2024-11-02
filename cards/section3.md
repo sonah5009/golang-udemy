@@ -103,3 +103,11 @@ But now it's randomization every singe time.
 since Go1.20, Intn() and other functions automatically set the Seed, so the implementation of rand.newSource() and rand.New() mentioned in the current section 31 is unnecessary.
 
 https://tip.golang.org/doc/go1.20#math/rand
+
+# 3-32. Creating a go.mod File
+
+`go mod init cards`
+
+# 3-33. Testing With Go
+
+Add: `deck_test.go`
